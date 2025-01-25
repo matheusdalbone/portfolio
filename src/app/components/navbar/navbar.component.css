@@ -9,13 +9,18 @@ img {
 }
 
 #logo-div {
-  margin: 1.4rem 0 1.125rem 2.3rem;
+  margin: 1.4rem 0 1.125rem 0.4rem;
+  width: 73%;
+}
+
+#logo {
+  width: fit-content;
   cursor: pointer;
-  width: 72%;
 }
 
 #header {
   display: flex;
+  justify-content: space-evenly;
   width: 100%;
   background-color: #161515;
   position: fixed;
@@ -24,14 +29,30 @@ img {
 }
 
 .text {
-  margin: 0 1.3rem 0 0;
+  margin: 0 1.35rem 0 0;
   font-family: 'Josefin Sans';
   color: white;
   font-size: 19px;
   cursor: pointer;
+  transition-duration: 400ms;
+  width: fit-content;
 }
 
 .icons {
   margin: 0 0.6rem 0 0;
   cursor: pointer;
+  transition-duration: 400ms;
+  fill: green;
+}
+
+#logo:hover {
+  text-shadow: 0 0 0.625rem white;
+}
+
+.icons:hover {
+  filter: drop-shadow(0 0 0.2rem white)
+}
+
+.text:hover {
+  text-shadow: 0 0 0.625rem white;
 }
