@@ -56,3 +56,25 @@ img {
 .text:hover {
   text-shadow: 0 0 0.625rem white;
 }
+
+.hidden {
+  position: sticky;
+  top: -100px;
+  animation-name: headerHideAnimation;
+  animation-duration: 400ms;
+}
+
+.show {
+  animation-name: headerShowAnimation;
+  animation-duration: 400ms;
+}
+
+@keyframes headerShowAnimation {
+  from {top: -100px;}
+  to {top: 0px;}
+}
+
+@keyframes headerHideAnimation {
+  from {top: 0px;}
+  to {top: -100px;}
+}
