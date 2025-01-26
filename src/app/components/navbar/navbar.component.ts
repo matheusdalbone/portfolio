@@ -1,12 +1,15 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit,  } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent implements OnInit{
+
+  hidden: string = 'hidden';
 
   ngOnInit(): void {
     window.addEventListener('scroll', this.scrollEvent);
@@ -18,10 +21,10 @@ export class NavbarComponent implements OnInit{
 
     if (scroll >= 300) {
       header?.setAttribute('class', 'show');
-      header?.removeAttribute('style');
     }
     else {
       header?.setAttribute('class', 'hidden');
+      this.hidden = 'visible';
     }
   }
 
