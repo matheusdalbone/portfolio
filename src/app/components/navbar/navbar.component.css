@@ -26,6 +26,7 @@ img {
   position: fixed;
   flex-direction: row;
   align-items: center;
+  border-radius: 0 0 0.35rem 0.35rem;
 }
 
 .text {
@@ -65,6 +66,7 @@ img {
 }
 
 .show {
+  top: 0rem;
   animation-name: headerShowAnimation;
   animation-duration: 400ms;
 }
