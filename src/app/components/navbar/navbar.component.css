@@ -27,7 +27,7 @@ img {
   flex-direction: row;
   align-items: center;
   border-radius: 0 0 0.35rem 0.35rem;
-  z-index: 1;
+  z-index: 3;
 }
 
 .text {
