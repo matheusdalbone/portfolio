@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+#about-me {
+  margin-top: 12.75rem;
+  width: 100%;
+  height: fit-content;
+}
+
+.text {
+  color: white;
+  font-family: 'Josefin Sans';
+  margin: 0px;
+}
+
+#timeline {
+  max-width: 75rem;
+  height: fit-content;
+  position: relative;
+  margin: 0 auto;
+}
+
+#timeline::after {
+  content: '';
+  position: absolute;
+  width: .375rem;
+  background-color: white;
+  top: 30px;
+  bottom: 0;
+  left: 50%;
+  margin-left: -0.1875rem;
+}
+
+.container {
+  padding: 1.37rem 2.5rem;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  right: -1.0625rem;
+  border: .25rem solid #fff;
+  top: .9375rem;
+  border-radius: 50%;
+  z-index: 1;
+  background-color: #fff;
+  width: 1.5625rem;
+  height: 1.5625rem;
+}
+
+.left {
+  left: 0;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 1.375rem;
+  width: 0;
+  z-index: 1;
+  right: 1.875rem;
+  border: medium solid white;
+  border-width: 0 0 .875rem .9375rem;
+  border-color: transparent transparent transparent white;
+}
+
+.right {
+  left: 50%;
+}
+
+.right::after {
+  left: -1rem;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 1.375rem;
+  width: 0;
+  z-index: 1;
+  left: 1.875rem;
+  border: medium solid white;
+  border-width: 0 .9375rem .875rem 0;
+  border-color: transparent white transparent transparent;
+}
+
+.content {
+  padding: 1.25rem 1.875rem;
+  background-color: white;
+  position: relative;
+  border-radius: 0 0 .375rem .375rem;
+}
