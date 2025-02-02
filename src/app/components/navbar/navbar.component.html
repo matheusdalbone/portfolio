@@ -1,13 +1,13 @@
 <header id="header" class="hidden" [ngStyle]="{'visibility': hidden}">
   <div id="logo-div">
-    <div id="logo">
+    <div id="logo" (click)="backToTop()">
       <p class="text" style="margin-bottom: 0.125rem;">Matheus</p>
       <p class="text" style="margin-left: 1.4rem;">Dalbone</p>
     </div>
   </div>
   <nav>
-    <p class="text">Home</p>
-    <p class="text">Timeline</p>
+    <p class="text" (click)="backToTop()">Home</p>
+    <p class="text">About Me</p>
     <p class="text">Projects</p>
     <p class="text">CV</p>
     <div id="gmail-logo" class="icons">

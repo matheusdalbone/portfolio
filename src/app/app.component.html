@@ -1,11 +1,14 @@
-  <app-navbar></app-navbar>
-  <ngx-particles
+  <header>
+    <app-navbar></app-navbar>
+  </header>
+  <main>
+    <ngx-particles
       [id]="id"
       [options]="particleOptions"
       [particlesInit]="particlesInit"
       id="ts-particles"
       >
     </ngx-particles>
-  <main>
+    <app-home></app-home>
     <div id="teste"></div>
   </main>

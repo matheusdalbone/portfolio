@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit,  } from '@angular/core';
+import { Component, effect, OnInit,  } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -25,6 +25,16 @@ export class NavbarComponent implements OnInit{
     else {
       header?.setAttribute('class', 'hidden');
       this.hidden = 'visible';
+    }
+  }
+
+  backToTop = () => {
+    if (window.scrollY > 0) {
+      window.scrollBy({
+        top: -window.scrollY,
+        left: 0,
+        behavior: 'smooth'
+      });
     }
   }
 

@@ -10,7 +10,7 @@ import { Engine } from '@tsparticles/engine';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [NgxParticlesModule, NavbarComponent]
+  imports: [NgxParticlesModule, NavbarComponent, HomeComponent]
 })
 export class AppComponent {
   title = 'portfolio';
